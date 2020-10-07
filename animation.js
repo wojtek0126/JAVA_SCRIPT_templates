@@ -10,6 +10,9 @@ let context = paintbox.getContext('2d');
 
 let gameOn = true;
 
+let playerImgFront = new Image();
+playerImgFront.src = '../images/cacosinglefront.png'
+
 let plyerSpeed = 5;
 // context.moveTo();
 // context.lineTo();
@@ -63,7 +66,7 @@ class Enemy extends Box {
     }
 }
 //create new player and enemies after setting speed they appear and move
-let player = new Player();
+let player = new Player(50, 'red');
 let e1 = new Enemy(1);
 let e2 = new Enemy(2);
 e1.x = 120;
@@ -87,10 +90,10 @@ paintbox.addEventListener('mouseup', () => {
     player.speed = 0;
 })
 
-setInterval(() => {
-    plyerSpeed = 5 + parseInt(Math.random() * 10);
-    player.y = 100 + (Math.random() * 300);
-}, 2000);
+// setInterval(() => {
+// plyerSpeed = 5 + parseInt(Math.random() * 10);
+// player.y = 100 + (Math.random() * 300);
+// }, 2000);
 
 function gameloop() {
     if (!gameOn) return
@@ -119,11 +122,3 @@ function gameloop() {
 // }
 
 gameloop();
-
-
-
-// setInterval(() => {
-//
-// }, 100);
-
-//drawbox(e1) to show it by now
