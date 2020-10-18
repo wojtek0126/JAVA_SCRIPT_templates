@@ -1,3 +1,7 @@
+
+//inefective, needs mod. It works, however collider and player were equally affected by collision on missile collision
+//with target
+
 shootRight.addEventListener('click', () => {
     const basMis = getElementById('missile_right');
     print(basMis)
