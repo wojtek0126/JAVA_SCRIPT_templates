@@ -1,0 +1,1 @@
+const {min, max, count, array} = props;
