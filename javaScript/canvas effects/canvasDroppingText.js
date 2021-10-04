@@ -1,4 +1,5 @@
 //plug it to html with element that has id canvas
+// it creates text that drops from above and nicely appears. source: https://www.javascripture.com/
 
 var canvas = document.getElementById('canvas');
 var context = canvas.getContext('2d');
