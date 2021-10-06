@@ -1,4 +1,4 @@
-//WIP
+//WIP OOP
 class WordSearch {
     // letterGrid: any;
     // word: any;
