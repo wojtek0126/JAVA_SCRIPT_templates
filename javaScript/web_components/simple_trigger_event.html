@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Your page</title>
+    <style>
+        .trigger-off {
+            cursor: pointer;
+            transition: 1s;
+            color: black;
+        }
+        
+        .trigger-on {
+            cursor: pointer;
+            transition: 1s;
+            color: gold;
+        }
+        
+        .target-off {
+            display: none;
+        }
+        
+        .target-on {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <a class="trigger-off" onclick="toggleContent()">Inner Healing Capacity</a>
+    <h1 class="target-off">`The most important "new" idea blah blah`</h1>
+</body>
+<script>
+    function toggleContent() {
+        const triggerElem = document.querySelector(".trigger-off");
+        const targetElem = document.querySelector(".target-off");
+        triggerElem.classList.toggle("trigger-on");
+        targetElem.classList.toggle("target-on");
+    }
+</script>
+
+</html>
