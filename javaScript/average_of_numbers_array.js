@@ -7,3 +7,8 @@ function find_average(array) {
         return average;
     }
 }
+
+// function betterThanAverage(classPoints, yourPoints) {
+//     const avg = classPoints.reduce((a,b) => a + b, 0) / classPoints.length;
+//     return yourPoints > avg ? true : false
+//   }

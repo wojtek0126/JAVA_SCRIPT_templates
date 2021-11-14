@@ -1,3 +1,4 @@
-function getEvenNumbers(numbersArray) {
-    return numbersArray.filter((number) => number % 2 === 0)
+function digitize(n) {
+    let arr = [...n + ''].reverse().map(n => +n);
+    return arr
 }
