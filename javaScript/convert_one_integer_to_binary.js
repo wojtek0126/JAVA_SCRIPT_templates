@@ -1,6 +1,5 @@
-
 const countBits = number => {
-    let arr =[];
+    let arr = [];
     let arrSpread = [];
     arr.push((number >>> 0).toString(2));
     // arr.map(function (e) {
@@ -19,3 +18,6 @@ console.log(countBits(3));
 //         sum = Math.floor( sum / 2 );
 //     } return binary;
 // }
+
+
+// n.toString(2); --->this one is one faultless!!!! above have missing one bit in some cases!!!
