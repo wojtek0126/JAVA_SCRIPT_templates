@@ -5,3 +5,5 @@ const newElement = (tag, attributes) => {
     }
     return element;
 }
+
+const newEl = newElement('div', {class: 'element'});
