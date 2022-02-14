@@ -27,3 +27,5 @@ const dateReFormatted = [day.join(""), dateSep, month.join(""), dateSep, year.jo
 };
 
 console.log(dateFormatter(date));
+
+let x = new Date() 
